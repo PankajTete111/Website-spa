@@ -1,0 +1,40 @@
+.featured-section {
+  margin: 2.5rem 0;
+}
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+.featured-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.view-all {
+  color: #b89c5a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.featured-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+@media (max-width: 900px) {
+  .featured-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .featured-list {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.7rem;
+  }
+} 

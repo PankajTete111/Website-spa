@@ -1,0 +1,111 @@
+.header {
+  /* width: 100%; */
+  /* background: linear-gradient(180deg, #f5e7d2 0%, #fff 100%); */
+  position: relative;
+}
+.header-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+.header-mobile {
+  display: none;
+}
+.logo-placeholder {
+  width: 120px;
+  height: 40px;
+  background: #d3c6b3;
+  border-radius: 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-links a:active, .nav-links a:focus {
+  background: #f5e7d2;
+}
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0rem 0.7rem 1rem;
+    margin-top: 10px;
+  }
+  .mobile-location {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    gap: 0.5rem;
+  }
+  .bell-icon {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.3rem 1rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    gap: 0.5rem;
+  }
+  .mobile-location .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .dropdown-arrow {
+    font-size: 1rem;
+    margin-left: 0.2rem;
+  }
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .mobile-actions .icon {
+    width: 22px;
+    height: 22px;
+  }
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e6c17b;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+  .logo-placeholder {
+    margin: 0 auto;
+  }
+} 

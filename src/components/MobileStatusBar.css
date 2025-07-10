@@ -1,0 +1,31 @@
+.mobile-status-bar {
+  display: none;
+  width: 100vw;
+  /* padding: 0.3rem 1rem 0.3rem 1rem; */
+  /* background: #fff; */
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  /* box-shadow: 0 1px 6px rgba(0,0,0,0.04); */
+ gap: 2.8rem; 
+}
+.status-time {
+  letter-spacing: 0.5px;
+}
+.status-icons img {
+  height: 12px;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  .mobile-status-bar {
+    display: flex;
+    flex-direction: row;
+  }
+} 
